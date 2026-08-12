@@ -1,0 +1,71 @@
+{
+  "2402.14800v2": {
+    "title": "Not All Experts are Equal: Efficient Expert Pruning and Skipping for Mixture-of-Experts Large Language Models",
+    "authors": [
+      "Xudong Lu",
+      "Qi Liu",
+      "Yuhui Xu",
+      "Aojun Zhou",
+      "Siyuan Huang",
+      "Bo Zhang",
+      "Junchi Yan",
+      "Hongsheng Li"
+    ],
+    "summary": "A pivotal advancement in the progress of large language models (LLMs) is the emergence of the Mixture-of-Experts (MoE) LLMs. Compared to traditional LLMs, MoE LLMs can achieve higher performance with fewer parameters, but it is still hard to deploy them due to their immense parameter sizes. Different from previous weight pruning methods that rely on specifically designed hardware, this paper mainly aims to enhance the deployment efficiency of MoE LLMs by introducing plug-and-play expert-level sparsification techniques. Specifically, we propose, for the first time to our best knowledge, post-training approaches for task-agnostic and task-specific expert pruning and skipping of MoE LLMs, tailored to improve deployment efficiency while maintaining model performance across a wide range of tasks. Extensive experiments show that our proposed methods can simultaneously reduce model sizes and increase the inference speed, while maintaining satisfactory performance. Data and code will be available at https://github.com/Lucky-Lance/Expert_Sparsity.",
+    "pdf_url": "https://arxiv.org/pdf/2402.14800v2",
+    "published": "2024-02-22"
+  },
+  "2410.17954v2": {
+    "title": "ExpertFlow: Efficient Mixture-of-Experts Inference via Predictive Expert Caching and Token Scheduling",
+    "authors": [
+      "Xin He",
+      "Shunkang Zhang",
+      "Kaijie Tang",
+      "Shaohuai Shi",
+      "Yuxin Wang",
+      "Zihao Zeng",
+      "Zhenheng Tang",
+      "Xiaowen Chu",
+      "Haiyan Yin",
+      "Ivor W. Tsang",
+      "Yew Soon Ong"
+    ],
+    "summary": "Sparse Mixture-of-Experts (MoE) models can outperform dense large language models at similar computation by activating only a small set of experts per token. However, stacking many expert modules introduces substantial parameter memory, which makes MoE models difficult to deploy in memory-constrained environments such as single-GPU devices. Offloading alleviates this issue by storing inactive experts in CPU memory and loading them on demand, but existing methods remain limited: static caches disregard input-dependent routing, and methods that train separate models to predict expert usage ahead of time are often inaccurate or require significant training cost. We propose ExpertFlow, a lightweight MoE inference system that addresses this routing dependency through three coordinated components: 1) a transformer-based routing path predictor that estimates expert usage across all MoE layers in a single forward pass, 2) a token scheduler that groups tokens with similar predicted routes to improve expert utilization, and 3) a predictive expert cache that loads only the required experts while correcting mispredictions at runtime. Together, these components enable efficient expert loading and execution, reducing GPU memory usage by up to 93.72% and improving inference throughput by up to 10x over strong offloading baselines on a single GPU.",
+    "pdf_url": "https://arxiv.org/pdf/2410.17954v2",
+    "published": "2024-10-23"
+  },
+  "2412.16117v1": {
+    "title": "PruneVid: Visual Token Pruning for Efficient Video Large Language Models",
+    "authors": [
+      "Xiaohu Huang",
+      "Hao Zhou",
+      "Kai Han"
+    ],
+    "summary": "In this paper, we introduce PruneVid, a visual token pruning method designed to enhance the efficiency of multi-modal video understanding. Large Language Models (LLMs) have shown promising performance in video tasks due to their extended capabilities in comprehending visual modalities. However, the substantial redundancy in video data presents significant computational challenges for LLMs. To address this issue, we introduce a training-free method that 1) minimizes video redundancy by merging spatial-temporal tokens, and 2) leverages LLMs' reasoning capabilities to selectively prune visual features relevant to question tokens, enhancing model efficiency. We validate our method across multiple video benchmarks, which demonstrate that PruneVid can prune over 80% of tokens while maintaining competitive performance combined with different model networks. This highlights its superior effectiveness and efficiency compared to existing pruning methods. Code: https://github.com/Visual-AI/PruneVid.",
+    "pdf_url": "https://arxiv.org/pdf/2412.16117v1",
+    "published": "2024-12-20"
+  },
+  "1806.08200v1": {
+    "title": "Mixtures of Experts Models",
+    "authors": [
+      "Isobel Claire Gormley",
+      "Sylvia Fr\u00fchwirth-Schnatter"
+    ],
+    "summary": "Mixtures of experts models provide a framework in which covariates may be included in mixture models. This is achieved by modelling the parameters of the mixture model as functions of the concomitant covariates. Given their mixture model foundation, mixtures of experts models possess a diverse range of analytic uses, from clustering observations to capturing parameter heterogeneity in cross-sectional data. This chapter focuses on delineating the mixture of experts modelling framework and demonstrates the utility and flexibility of mixtures of experts models as an analytic tool.",
+    "pdf_url": "https://arxiv.org/pdf/1806.08200v1",
+    "published": "2018-06-21"
+  },
+  "2508.05993v3": {
+    "title": "Efficient Multimodal Streaming Recommendation via Expandable Side Mixture-of-Experts",
+    "authors": [
+      "Yunke Qu",
+      "Liang Qu",
+      "Tong Chen",
+      "Quoc Viet Hung Nguyen",
+      "Hongzhi Yin"
+    ],
+    "summary": "Streaming recommender systems (SRSs) are widely deployed in real-world applications, where user interests shift and new items arrive over time. As a result, effectively capturing users' latest preferences is challenging, as interactions reflecting recent interests are limited and new items often lack sufficient feedback. A common solution is to enrich item representations using multimodal encoders (e.g., BERT or ViT) to extract visual and textual features. However, these encoders are pretrained on general-purpose tasks: they are not tailored to user preference modeling, and they overlook the fact that user tastes toward modality-specific features such as visual styles and textual tones can also drift over time. This presents two key challenges in streaming scenarios: the high cost of fine-tuning large multimodal encoders, and the risk of forgetting long-term user preferences due to continuous model updates.\n  To tackle these challenges, we propose Expandable Side Mixture-of-Experts (XSMoE), a memory-efficient framework for multimodal streaming recommendation. XSMoE attaches lightweight side-tuning modules consisting of expandable expert networks to frozen pretrained encoders and incrementally expands them in response to evolving user feedback. A gating router dynamically combines expert and backbone outputs, while a utilization-based pruning strategy maintains model compactness. By learning new patterns through expandable experts without overwriting previously acquired knowledge, XSMoE effectively captures both cold start and shifting preferences in multimodal features. Experiments on three real-world datasets demonstrate that XSMoE outperforms state-of-the-art baselines in both recommendation quality and computational efficiency.",
+    "pdf_url": "https://arxiv.org/pdf/2508.05993v3",
+    "published": "2025-08-08"
+  }
+}

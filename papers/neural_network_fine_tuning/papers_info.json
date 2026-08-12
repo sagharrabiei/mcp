@@ -1,0 +1,61 @@
+{
+  "1609.04846v1": {
+    "title": "A Tutorial about Random Neural Networks in Supervised Learning",
+    "authors": [
+      "Sebasti\u00e1n Basterrech",
+      "Gerardo Rubino"
+    ],
+    "summary": "Random Neural Networks (RNNs) are a class of Neural Networks (NNs) that can also be seen as a specific type of queuing network. They have been successfully used in several domains during the last 25 years, as queuing networks to analyze the performance of resource sharing in many engineering areas, as learning tools and in combinatorial optimization, where they are seen as neural systems, and also as models of neurological aspects of living beings. In this article we focus on their learning capabilities, and more specifically, we present a practical guide for using the RNN to solve supervised learning problems. We give a general description of these models using almost indistinctly the terminology of Queuing Theory and the neural one. We present the standard learning procedures used by RNNs, adapted from similar well-established improvements in the standard NN field. We describe in particular a set of learning algorithms covering techniques based on the use of first order and, then, of second order derivatives. We also discuss some issues related to these objects and present new perspectives about their use in supervised learning problems. The tutorial describes their most relevant applications, and also provides a large bibliography.",
+    "pdf_url": "https://arxiv.org/pdf/1609.04846v1",
+    "published": "2016-09-15"
+  },
+  "2502.01654v1": {
+    "title": "Predicting concentration levels of air pollutants by transfer learning and recurrent neural network",
+    "authors": [
+      "Iat Hang Fong",
+      "Tengyue Li",
+      "Simon Fong",
+      "Raymond K. Wong",
+      "Antonio J. Tall\u00f3n-Ballesteros"
+    ],
+    "summary": "Air pollution (AP) poses a great threat to human health, and people are paying more attention than ever to its prediction. Accurate prediction of AP helps people to plan for their outdoor activities and aids protecting human health. In this paper, long-short term memory (LSTM) recurrent neural networks (RNNs) have been used to predict the future concentration of air pollutants (APS) in Macau. Additionally, meteorological data and data on the concentration of APS have been utilized. Moreover, in Macau, some air quality monitoring stations (AQMSs) have less observed data in quantity, and, at the same time, some AQMSs recorded less observed data of certain types of APS. Therefore, the transfer learning and pre-trained neural networks have been employed to assist AQMSs with less observed data to build a neural network with high prediction accuracy. The experimental sample covers a period longer than 12-year and includes daily measurements from several APS as well as other more classical meteorological values. Records from five stations, four out of them are AQMSs and the remaining one is an automatic weather station, have been prepared from the aforesaid period and eventually underwent to computational intelligence techniques to build and extract a prediction knowledge-based system. As shown by experimentation, LSTM RNNs initialized with transfer learning methods have higher prediction accuracy; it incurred shorter training time than randomly initialized recurrent neural networks.",
+    "pdf_url": "https://arxiv.org/pdf/2502.01654v1",
+    "published": "2025-01-30"
+  },
+  "1801.10059v1": {
+    "title": "Is The Universal Matter - Antimatter Asymmetry Fine Tuned?",
+    "authors": [
+      "Gary Steigman",
+      "Robert J. Scherrer"
+    ],
+    "summary": "The asymmetry between matter and antimatter is key to the existence and nature of our Universe. A measure of the matter - antimatter asymmetry of the Universe is provided by the present value of the universal ratio of baryons (baryons minus antibaryons) to photons (or the ratio of baryons to entropy). The baryon asymmetry parameter is an important physical and cosmological parameter. But how fine tuned is it? A \"natural\" value for this parameter is zero, corresponding to equal amounts of matter and antimatter. Another, also possibly natural, choice for this dimensionless parameter would be of order unity, corresponding to nearly equal amounts (by number) of matter (and essentially no antimatter) and photons in every comoving volume. However, observations suggest that in the Universe we inhabit the value of this parameter is nonzero, but smaller than this natural value by some nine to ten orders of magnitude. In this contribution we review the evidence that our Universe does not contain equal amounts of matter and antimatter. Any change in the magnitude of the baryon asymmetry parameter necessarily leads to a universe with physical characteristics different from those in our own. The degree of fine tuning in the baryon asymmetry parameter is determined by the width of the range over which it can be varied and still allow for the existence of life. Our results suggest that the baryon asymmetry parameter can be varied over a very wide range without impacting the prospects for life; this result is not suggestive of fine tuning. [abridged]",
+    "pdf_url": "https://arxiv.org/pdf/1801.10059v1",
+    "published": "2018-01-30"
+  },
+  "1803.02421v2": {
+    "title": "Masked Conditional Neural Networks for Audio Classification",
+    "authors": [
+      "Fady Medhat",
+      "David Chesmore",
+      "John Robinson"
+    ],
+    "summary": "We present the ConditionaL Neural Network (CLNN) and the Masked ConditionaL Neural Network (MCLNN) designed for temporal signal recognition. The CLNN takes into consideration the temporal nature of the sound signal and the MCLNN extends upon the CLNN through a binary mask to preserve the spatial locality of the features and allows an automated exploration of the features combination analogous to hand-crafting the most relevant features for the recognition task. MCLNN has achieved competitive recognition accuracies on the GTZAN and the ISMIR2004 music datasets that surpass several state-of-the-art neural network based architectures and hand-crafted methods applied on both datasets.",
+    "pdf_url": "https://arxiv.org/pdf/1803.02421v2",
+    "published": "2018-03-06"
+  },
+  "2507.15336v3": {
+    "title": "Beyond Model Base Retrieval: Weaving Knowledge to Master Fine-grained Neural Network Design",
+    "authors": [
+      "Jialiang Wang",
+      "Hanmo Liu",
+      "Shimin Di",
+      "Zhili Wang",
+      "Jiachuan Wang",
+      "Lei Chen",
+      "Xiaofang Zhou"
+    ],
+    "summary": "Designing high-performance neural networks for new tasks requires balancing optimization quality with search efficiency. Current methods fail to achieve this balance: neural architectural search is computationally expensive, while model retrieval often yields suboptimal static checkpoints. To resolve this dilemma, we model the performance gains induced by fine-grained architectural modifications as edit-effect evidence and build evidence graphs from prior tasks. By constructing a retrieval-augmented model refinement framework, our proposed M-DESIGN dynamically weaves historical evidence to discover near-optimal modification paths. M-DESIGN features an adaptive retrieval mechanism that quickly calibrates the evolving transferability of edit-effect evidence from different sources. To handle out-of-distribution shifts, we introduce predictive task planners that extrapolate gains from multi-hop evidence, thereby reducing reliance on an exhaustive repository. Based on our model knowledge base of 67,760 graph neural networks across 22 datasets, extensive experiments demonstrate that M-DESIGN consistently outperforms baselines, achieving the search-space best performance in 26 out of 33 cases under a strict budget.",
+    "pdf_url": "https://arxiv.org/pdf/2507.15336v3",
+    "published": "2025-07-21"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "1810.04645v2": {
+    "title": "Security for the Industrial IoT: The Case for Information-Centric Networking",
+    "authors": [
+      "Michael Frey",
+      "Cenk G\u00fcndo\u011fan",
+      "Peter Kietzmann",
+      "Martine Lenders",
+      "Hauke Petersen",
+      "Thomas C. Schmidt",
+      "Felix Shzu-Juraschek",
+      "Matthias W\u00e4hlisch"
+    ],
+    "summary": "Industrial production plants traditionally include sensors for monitoring or documenting processes, and actuators for enabling corrective actions in cases of misconfigurations, failures, or dangerous events. With the advent of the IoT, embedded controllers link these `things' to local networks that often are of low power wireless kind, and are interconnected via gateways to some cloud from the global Internet. Inter-networked sensors and actuators in the industrial IoT form a critical subsystem while frequently operating under harsh conditions. It is currently under debate how to approach inter-networking of critical industrial components in a safe and secure manner.\n  In this paper, we analyze the potentials of ICN for providing a secure and robust networking solution for constrained controllers in industrial safety systems. We showcase hazardous gas sensing in widespread industrial environments, such as refineries, and compare with IP-based approaches such as CoAP and MQTT. Our findings indicate that the content-centric security model, as well as enhanced DoS resistance are important arguments for deploying Information Centric Networking in a safety-critical industrial IoT. Evaluation of the crypto efforts on the RIOT operating system for content security reveal its feasibility for common deployment scenarios.",
+    "pdf_url": "https://arxiv.org/pdf/1810.04645v2",
+    "published": "2018-10-10"
+  },
+  "2301.03815v1": {
+    "title": "Marine IoT Systems with Space-Air-Sea Integrated Networks: Hybrid LEO and UAV Edge Computing",
+    "authors": [
+      "Sooyeob Jung",
+      "Seongah Jeong",
+      "Jinkyu Kang",
+      "Joonhyuk Kang"
+    ],
+    "summary": "Marine Internet of Things (IoT) systems have grown substantially with the development of non-terrestrial networks (NTN) via aerial and space vehicles in the upcoming sixth-generation (6G), thereby assisting environment protection, military reconnaissance, and sea transportation. Due to unpredictable climate changes and the extreme channel conditions of maritime networks, however, it is challenging to efficiently and reliably collect and compute a huge amount of maritime data. In this paper, we propose a hybrid low-Earth orbit (LEO) and unmanned aerial vehicle (UAV) edge computing method in space-air-sea integrated networks for marine IoT systems. Specifically, two types of edge servers mounted on UAVs and LEO satellites are endowed with computational capabilities for the real-time utilization of a sizable data collected from ocean IoT sensors. Our system aims at minimizing the total energy consumption of the battery-constrained UAV by jointly optimizing the bit allocation of communication and computation along with the UAV path planning under latency, energy budget and operational constraints. For availability and practicality, the proposed methods were developed for three different cases according to the accessibility of the LEO satellite, ``Always On,\" ``Always Off\" and ``Intermediate Disconnected\", by leveraging successive convex approximation (SCA) strategies. Via numerical results, we verify that significant energy savings can be accrued for all cases of LEO accessibility by means of joint optimization of bit allocation and UAV path planning compared to partial optimization schemes that design for only the bit allocation or trajectory of the UAV.",
+    "pdf_url": "https://arxiv.org/pdf/2301.03815v1",
+    "published": "2023-01-10"
+  },
+  "2312.06689v2": {
+    "title": "Introduction to IoT",
+    "authors": [
+      "Tajkia Nuri Ananna",
+      "Munshi Saifuzzaman"
+    ],
+    "summary": "The Internet of Things has rapidly transformed the 21st century, enhancing decision-making processes and introducing innovative consumer services such as pay-as-you-use models. The integration of smart devices and automation technologies has revolutionized every aspect of our lives, from health services to the manufacturing industry, and from the agriculture sector to mining. Alongside the positive aspects, it is also essential to recognize the significant safety, security, and trust concerns in this technological landscape. This chapter serves as a comprehensive guide for newcomers interested in the IoT domain, providing a foundation for making future contributions. Specifically, it discusses the overview, historical evolution, key characteristics, advantages, architectures, taxonomy of technologies, and existing applications in major IoT domains. In addressing prevalent issues and challenges in designing and deploying IoT applications, the chapter examines security threats across architectural layers, ethical considerations, user privacy concerns, and trust-related issues. This discussion equips researchers with a solid understanding of diverse IoT aspects, providing a comprehensive understanding of IoT technology along with insights into the extensive potential and impact of this transformative field.",
+    "pdf_url": "https://arxiv.org/pdf/2312.06689v2",
+    "published": "2023-12-09"
+  },
+  "2312.05530v2": {
+    "title": "Towards Smart Healthcare: Challenges and Opportunities in IoT and ML",
+    "authors": [
+      "Munshi Saifuzzaman",
+      "Tajkia Nuri Ananna"
+    ],
+    "summary": "The COVID-19 pandemic and other ongoing health crises have underscored the need for prompt healthcare services worldwide. The traditional healthcare system, centered around hospitals and clinics, has proven inadequate in the face of such challenges. Intelligent wearable devices, a key part of modern healthcare, leverage Internet of Things technology to collect extensive data related to the environment as well as psychological, behavioral, and physical health. However, managing the substantial data generated by these wearables and other IoT devices in healthcare poses a significant challenge, potentially impeding decision-making processes. Recent interest has grown in applying data analytics for extracting information, gaining insights, and making predictions. Additionally, machine learning, known for addressing various big data and networking challenges, has seen increased implementation to enhance IoT systems in healthcare. This chapter focuses exclusively on exploring the hurdles encountered when integrating ML methods into the IoT healthcare sector. It offers a comprehensive summary of current research challenges and potential opportunities, categorized into three scenarios: IoT-based, ML-based, and the implementation of machine learning methodologies in the IoT-based healthcare industry. This compilation will assist future researchers, healthcare professionals, and government agencies by offering valuable insights into recent smart healthcare advancements.",
+    "pdf_url": "https://arxiv.org/pdf/2312.05530v2",
+    "published": "2023-12-09"
+  },
+  "2310.00346v1": {
+    "title": "Fostering new Vertical and Horizontal IoT Applications with Intelligence Everywhere",
+    "authors": [
+      "Hung Cao",
+      "Monica Wachowicz",
+      "Rene Richard",
+      "Ching-Hsien Hsu"
+    ],
+    "summary": "Intelligence Everywhere is predicated on the seamless integration of IoT networks transporting a vast amount of data streams through many computing resources across an edge-to-cloud continuum, relying on the orchestration of distributed machine learning models. The result is an interconnected and collective intelligent ecosystem where devices, systems, services, and users work together to support IoT applications. This paper discusses the state-of-the-art research and the principles of the Intelligence Everywhere framework for enhancing IoT applications in vertical sectors such as Digital Health, Infrastructure, and Transportation/Mobility in the context of intelligent society (Society 5.0). It also introduces a novel perspective for the development of horizontal IoT applications, capable of running across various IoT networks while fostering collective intelligence across diverse sectors. Finally, this paper provides comprehensive insights into the challenges and opportunities for harnessing collective knowledge from real-time insights, leading to optimised processes and better overall collaboration across different IoT sectors.",
+    "pdf_url": "https://arxiv.org/pdf/2310.00346v1",
+    "published": "2023-09-30"
+  }
+}

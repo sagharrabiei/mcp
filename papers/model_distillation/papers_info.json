@@ -1,0 +1,69 @@
+{
+  "1710.06169v4": {
+    "title": "Distill-and-Compare: Auditing Black-Box Models Using Transparent Model Distillation",
+    "authors": [
+      "Sarah Tan",
+      "Rich Caruana",
+      "Giles Hooker",
+      "Yin Lou"
+    ],
+    "summary": "Black-box risk scoring models permeate our lives, yet are typically proprietary or opaque. We propose Distill-and-Compare, a model distillation and comparison approach to audit such models. To gain insight into black-box models, we treat them as teachers, training transparent student models to mimic the risk scores assigned by black-box models. We compare the student model trained with distillation to a second un-distilled transparent model trained on ground-truth outcomes, and use differences between the two models to gain insight into the black-box model. Our approach can be applied in a realistic setting, without probing the black-box model API. We demonstrate the approach on four public data sets: COMPAS, Stop-and-Frisk, Chicago Police, and Lending Club. We also propose a statistical test to determine if a data set is missing key features used to train the black-box model. Our test finds that the ProPublica data is likely missing key feature(s) used in COMPAS.",
+    "pdf_url": "https://arxiv.org/pdf/1710.06169v4",
+    "published": "2017-10-17"
+  },
+  "2008.00506v1": {
+    "title": "Differentiable Feature Aggregation Search for Knowledge Distillation",
+    "authors": [
+      "Yushuo Guan",
+      "Pengyu Zhao",
+      "Bingxuan Wang",
+      "Yuanxing Zhang",
+      "Cong Yao",
+      "Kaigui Bian",
+      "Jian Tang"
+    ],
+    "summary": "Knowledge distillation has become increasingly important in model compression. It boosts the performance of a miniaturized student network with the supervision of the output distribution and feature maps from a sophisticated teacher network. Some recent works introduce multi-teacher distillation to provide more supervision to the student network. However, the effectiveness of multi-teacher distillation methods are accompanied by costly computation resources. To tackle with both the efficiency and the effectiveness of knowledge distillation, we introduce the feature aggregation to imitate the multi-teacher distillation in the single-teacher distillation framework by extracting informative supervision from multiple teacher feature maps. Specifically, we introduce DFA, a two-stage Differentiable Feature Aggregation search method that motivated by DARTS in neural architecture search, to efficiently find the aggregations. In the first stage, DFA formulates the searching problem as a bi-level optimization and leverages a novel bridge loss, which consists of a student-to-teacher path and a teacher-to-student path, to find appropriate feature aggregations. The two paths act as two players against each other, trying to optimize the unified architecture parameters to the opposite directions while guaranteeing both expressivity and learnability of the feature aggregation simultaneously. In the second stage, DFA performs knowledge distillation with the derived feature aggregation. Experimental results show that DFA outperforms existing methods on CIFAR-100 and CINIC-10 datasets under various teacher-student settings, verifying the effectiveness and robustness of the design.",
+    "pdf_url": "https://arxiv.org/pdf/2008.00506v1",
+    "published": "2020-08-02"
+  },
+  "1812.00660v1": {
+    "title": "Knowledge Distillation with Feature Maps for Image Classification",
+    "authors": [
+      "Wei-Chun Chen",
+      "Chia-Che Chang",
+      "Chien-Yu Lu",
+      "Che-Rung Lee"
+    ],
+    "summary": "The model reduction problem that eases the computation costs and latency of complex deep learning architectures has received an increasing number of investigations owing to its importance in model deployment. One promising method is knowledge distillation (KD), which creates a fast-to-execute student model to mimic a large teacher network. In this paper, we propose a method, called KDFM (Knowledge Distillation with Feature Maps), which improves the effectiveness of KD by learning the feature maps from the teacher network. Two major techniques used in KDFM are shared classifier and generative adversarial network. Experimental results show that KDFM can use a four layers CNN to mimic DenseNet-40 and use MobileNet to mimic DenseNet-100. Both student networks have less than 1\\% accuracy loss comparing to their teacher models for CIFAR-100 datasets. The student networks are 2-6 times faster than their teacher models for inference, and the model size of MobileNet is less than half of DenseNet-100's.",
+    "pdf_url": "https://arxiv.org/pdf/1812.00660v1",
+    "published": "2018-12-03"
+  },
+  "2302.14416v3": {
+    "title": "DREAM: Efficient Dataset Distillation by Representative Matching",
+    "authors": [
+      "Yanqing Liu",
+      "Jianyang Gu",
+      "Kai Wang",
+      "Zheng Zhu",
+      "Wei Jiang",
+      "Yang You"
+    ],
+    "summary": "Dataset distillation aims to synthesize small datasets with little information loss from original large-scale ones for reducing storage and training costs. Recent state-of-the-art methods mainly constrain the sample synthesis process by matching synthetic images and the original ones regarding gradients, embedding distributions, or training trajectories. Although there are various matching objectives, currently the strategy for selecting original images is limited to naive random sampling.\n  We argue that random sampling overlooks the evenness of the selected sample distribution, which may result in noisy or biased matching targets.\n  Besides, the sample diversity is also not constrained by random sampling. These factors together lead to optimization instability in the distilling process and degrade the training efficiency. Accordingly, we propose a novel matching strategy named as \\textbf{D}ataset distillation by \\textbf{RE}present\\textbf{A}tive \\textbf{M}atching (DREAM), where only representative original images are selected for matching. DREAM is able to be easily plugged into popular dataset distillation frameworks and reduce the distilling iterations by more than 8 times without performance drop. Given sufficient training time, DREAM further provides significant improvements and achieves state-of-the-art performances.",
+    "pdf_url": "https://arxiv.org/pdf/2302.14416v3",
+    "published": "2023-02-28"
+  },
+  "2404.17732v1": {
+    "title": "Generative Dataset Distillation: Balancing Global Structure and Local Details",
+    "authors": [
+      "Longzhen Li",
+      "Guang Li",
+      "Ren Togo",
+      "Keisuke Maeda",
+      "Takahiro Ogawa",
+      "Miki Haseyama"
+    ],
+    "summary": "In this paper, we propose a new dataset distillation method that considers balancing global structure and local details when distilling the information from a large dataset into a generative model. Dataset distillation has been proposed to reduce the size of the required dataset when training models. The conventional dataset distillation methods face the problem of long redeployment time and poor cross-architecture performance. Moreover, previous methods focused too much on the high-level semantic attributes between the synthetic dataset and the original dataset while ignoring the local features such as texture and shape. Based on the above understanding, we propose a new method for distilling the original image dataset into a generative model. Our method involves using a conditional generative adversarial network to generate the distilled dataset. Subsequently, we ensure balancing global structure and local details in the distillation process, continuously optimizing the generator for more information-dense dataset generation.",
+    "pdf_url": "https://arxiv.org/pdf/2404.17732v1",
+    "published": "2024-04-26"
+  }
+}

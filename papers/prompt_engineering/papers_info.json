@@ -1,0 +1,135 @@
+{
+  "2604.26615v1": {
+    "title": "TDD Governance for Multi-Agent Code Generation via Prompt Engineering",
+    "authors": [
+      "Tarlan Hasanli",
+      "Shahbaz Siddeeq",
+      "Bishwash Khanal",
+      "Pyry Kotilainen",
+      "Tommi Mikkonen",
+      "Pekka Abrahamsson"
+    ],
+    "summary": "Large language models (LLMs) accelerate software development but often exhibit instability, non-determinism, and weak adherence to development discipline in unconstrained workflows. While test-driven development (TDD) provides a structured Red-Green-Refactor process, existing LLM-based approaches typically use tests as auxiliary inputs rather than enforceable process constraints. We present an AI-native TDD framework that operationalizes classical TDD principles as structured prompt-level and workflow-level governance mechanisms. Extracted principles are formalized in a machine-readable manifesto and distributed across planning, generation, repair, and validation stages within a layered architecture that separates model proposal from deterministic engine authority. The system enforces phase ordering, bounded repair loops, validation gates, and atomic mutation control to improve stability and reproducibility. We describe architecture and discuss encoding software engineering discipline directly into prompt orchestration, which we think offers a promising direction for reliable LLM-assisted development.",
+    "pdf_url": "https://arxiv.org/pdf/2604.26615v1",
+    "published": "2026-04-29"
+  },
+  "2605.07422v1": {
+    "title": "Prompt Engineering Strategies for LLM-based Qualitative Coding of Psychological Safety in Software Engineering Communities: A Controlled Empirical Study",
+    "authors": [
+      "Moaath Alshaikh",
+      "Tasneem Alshaher",
+      "Ricardo Vieira",
+      "Beatriz Santana",
+      "Clelio Xavier",
+      "Jose Amancio",
+      "Glauco Carneiro",
+      "Julio Leite",
+      "Savio Freire",
+      "Manoel Mendonca"
+    ],
+    "summary": "Qualitative analysis plays a pivotal role in understanding the human and social aspects of software engineering. However, it remains a demanding process shaped by the subjective interpretation of individual researchers and sensitive to methodological choices such as prompt design. Recent advancements in Large Language Models (LLMs) offer promising opportunities to support this type of analysis, although their reliability in reproducing human qualitative reasoning under varying prompting conditions remains largely untested. This study presents a controlled empirical evaluation of three LLMs -- Claude Haiku, DeepSeek-Chat, and Gemini 2.5 Flash -- across two prompt engineering strategies (zero-shot and multi-shot closed coding), using Cohen's kappa as the primary agreement metric over ten independent runs per configuration. Results suggest that multi-shot prompting significantly improves agreement for Claude Haiku (Delta kappa = +0.034, Wilcoxon p = 0.004) but not for DeepSeek-Chat or Gemini 2.5 Flash. Intra-model stability varies substantially -- DeepSeek-Chat and Claude Haiku exhibit the lowest variance (SD approx. 0.017), while Gemini 2.5 Flash is the least stable (SD = 0.038). A systematic over-prediction of \"Sharing Negative Feedback\" is identified across all models (bias ratios up to 5.25x), alongside consistent under-prediction of \"Expressing Concerns.\" Collectively, these findings provide empirical evidence for prompt engineering guidelines in LLM-assisted qualitative coding for software engineering research.",
+    "pdf_url": "https://arxiv.org/pdf/2605.07422v1",
+    "published": "2026-05-08"
+  },
+  "2401.14043v3": {
+    "title": "Towards Goal-oriented Prompt Engineering for Large Language Models: A Survey",
+    "authors": [
+      "Haochen Li",
+      "Jonathan Leung",
+      "Zhiqi Shen"
+    ],
+    "summary": "Large Language Models (LLMs) have shown prominent performance in various downstream tasks and prompt engineering plays a pivotal role in optimizing LLMs' performance. This paper, not only as an overview of current prompt engineering methods, but also aims to highlight the limitation of designing prompts based on an anthropomorphic assumption that expects LLMs to think like humans. From our review of 50 representative studies, we demonstrate that a goal-oriented prompt formulation, which guides LLMs to follow established human logical thinking, significantly improves the performance of LLMs. Furthermore, We introduce a novel taxonomy that categorizes goal-oriented prompting methods into five interconnected stages and we demonstrate the broad applicability of our framework. With four future directions proposed, we hope to further emphasize the power and potential of goal-oriented prompt engineering in all fields.",
+    "pdf_url": "https://arxiv.org/pdf/2401.14043v3",
+    "published": "2024-01-25"
+  },
+  "2503.02400v2": {
+    "title": "Promptware Engineering: Software Engineering for Prompt-Enabled Systems",
+    "authors": [
+      "Zhenpeng Chen",
+      "Chong Wang",
+      "Weisong Sun",
+      "Xuanzhe Liu",
+      "Jie M. Zhang",
+      "Yang Liu"
+    ],
+    "summary": "Large Language Models (LLMs) are increasingly integrated into software applications, giving rise to a broad class of prompt-enabled systems, in which prompts serve as the primary 'programming' interface for guiding system behavior. Building on this trend, a new software paradigm, promptware, has emerged, which treats natural language prompts as first-class software artifacts for interacting with LLMs. Unlike traditional software, which relies on formal programming languages and deterministic runtime environments, promptware is based on ambiguous, unstructured, and context-dependent natural language and operates on LLMs as runtime environments, which are probabilistic and non-deterministic. These fundamental differences introduce unique challenges in prompt development. In practice, prompt development remains largely ad hoc and relies heavily on time-consuming trial-and-error, a challenge we term the promptware crisis. To address this, we propose promptware engineering, a new methodology that adapts established Software Engineering (SE) principles to prompt development. Drawing on decades of success in traditional SE, we envision a systematic framework encompassing prompt requirements engineering, design, implementation, testing, debugging, evolution, deployment, and monitoring. Our framework re-contextualizes emerging prompt-related challenges within the SE lifecycle, providing principled guidance beyond ad-hoc practices. Without the SE discipline, prompt development is likely to remain mired in trial-and-error. This paper outlines a comprehensive roadmap for promptware engineering, identifying key research directions and offering actionable insights to advance the development of prompt-enabled systems.",
+    "pdf_url": "https://arxiv.org/pdf/2503.02400v2",
+    "published": "2025-03-04"
+  },
+  "2507.03405v1": {
+    "title": "Prompt Engineering Guidelines for Using Large Language Models in Requirements Engineering",
+    "authors": [
+      "Krishna Ronanki",
+      "Simon Arvidsson",
+      "Johan Axell"
+    ],
+    "summary": "The rapid emergence of generative AI models like Large Language Models (LLMs) has demonstrated its utility across various activities, including within Requirements Engineering (RE). Ensuring the quality and accuracy of LLM-generated output is critical, with prompt engineering serving as a key technique to guide model responses. However, existing literature provides limited guidance on how prompt engineering can be leveraged, specifically for RE activities. The objective of this study is to explore the applicability of existing prompt engineering guidelines for the effective usage of LLMs within RE. To achieve this goal, we began by conducting a systematic review of primary literature to compile a non-exhaustive list of prompt engineering guidelines. Then, we conducted interviews with RE experts to present the extracted guidelines and gain insights on the advantages and limitations of their application within RE. Our literature review indicates a shortage of prompt engineering guidelines for domain-specific activities, specifically for RE. Our proposed mapping contributes to addressing this shortage. We conclude our study by identifying an important future line of research within this field.",
+    "pdf_url": "https://arxiv.org/pdf/2507.03405v1",
+    "published": "2025-07-04"
+  },
+  "2406.04710v2": {
+    "title": "Morescient GAI for Software Engineering (Extended Version)",
+    "authors": [
+      "Marcus Kessel",
+      "Colin Atkinson"
+    ],
+    "summary": "The ability of Generative AI (GAI) technology to automatically check, synthesize and modify software engineering artifacts promises to revolutionize all aspects of software engineering. Using GAI for software engineering tasks is consequently one of the most rapidly expanding fields of software engineering research, with over a hundred LLM-based code models having been published since 2021. However, the overwhelming majority of existing code models share a major weakness - they are exclusively trained on the syntactic facet of software, significantly lowering their trustworthiness in tasks dependent on software semantics. To address this problem, a new class of \"Morescient\" GAI is needed that is \"aware\" of (i.e., trained on) both the semantic and static facets of software. This, in turn, will require a new generation of software observation platforms capable of generating large quantities of execution observations in a structured and readily analyzable way. In this paper, we present a vision and roadmap for how such \"Morescient\" GAI models can be engineered, evolved and disseminated according to the principles of open science.",
+    "pdf_url": "https://arxiv.org/pdf/2406.04710v2",
+    "published": "2024-06-07"
+  },
+  "2509.17096v1": {
+    "title": "Prompt-with-Me: in-IDE Structured Prompt Management for LLM-Driven Software Engineering",
+    "authors": [
+      "Ziyou Li",
+      "Agnia Sergeyuk",
+      "Maliheh Izadi"
+    ],
+    "summary": "Large Language Models are transforming software engineering, yet prompt management in practice remains ad hoc, hindering reliability, reuse, and integration into industrial workflows. We present Prompt-with-Me, a practical solution for structured prompt management embedded directly in the development environment. The system automatically classifies prompts using a four-dimensional taxonomy encompassing intent, author role, software development lifecycle stage, and prompt type. To enhance prompt reuse and quality, Prompt-with-Me suggests language refinements, masks sensitive information, and extracts reusable templates from a developer's prompt library. Our taxonomy study of 1108 real-world prompts demonstrates that modern LLMs can accurately classify software engineering prompts. Furthermore, our user study with 11 participants shows strong developer acceptance, with high usability (Mean SUS=73), low cognitive load (Mean NASA-TLX=21), and reported gains in prompt quality and efficiency through reduced repetitive effort. Lastly, we offer actionable insights for building the next generation of prompt management and maintenance tools for software engineering workflows.",
+    "pdf_url": "https://arxiv.org/pdf/2509.17096v1",
+    "published": "2025-09-21"
+  },
+  "cs/0306108v1": {
+    "title": "Web Engineering",
+    "authors": [
+      "Yogesh Deshpande",
+      "San Murugesan",
+      "Athula Ginige",
+      "Steve Hansen",
+      "Daniel Schwabe",
+      "Martin Gaedke",
+      "Bebo White"
+    ],
+    "summary": "  Web Engineering is the application of systematic, disciplined and quantifiable approaches to development, operation, and maintenance of Web-based applications. It is both a pro-active approach and a growing collection of theoretical and empirical research in Web application development. This paper gives an overview of Web Engineering by addressing the questions: a) why is it needed? b) what is its domain of operation? c) how does it help and what should it do to improve Web application development? and d) how should it be incorporated in education and training? The paper discusses the significant differences that exist between Web applications and conventional software, the taxonomy of Web applications, the progress made so far and the research issues and experience of creating a specialisation at the master's level. The paper reaches a conclusion that Web Engineering at this stage is a moving target since Web technologies are constantly evolving, making new types of applications possible, which in turn may require innovations in how they are built, deployed and maintained.",
+    "pdf_url": "https://arxiv.org/pdf/cs/0306108v1",
+    "published": "2003-06-18"
+  },
+  "1707.03869v3": {
+    "title": "Cognitive Biases in Software Engineering: A Systematic Mapping Study",
+    "authors": [
+      "Rahul Mohanani",
+      "Iflaah Salman",
+      "Burak Turhan",
+      "Pilar Rodriguez",
+      "Paul Ralph"
+    ],
+    "summary": "One source of software project challenges and failures is the systematic errors introduced by human cognitive biases. Although extensively explored in cognitive psychology, investigations concerning cognitive biases have only recently gained popularity in software engineering (SE) research. This paper therefore systematically maps, aggregates and synthesizes the literature on cognitive biases in software engineering to generate a comprehensive body of knowledge, understand state of the art research and provide guidelines for future research and practise. Focusing on bias antecedents, effects and mitigation techniques, we identified 65 articles, which investigate 37 cognitive biases, published between 1990 and 2016. Despite strong and increasing interest, the results reveal a scarcity of research on mitigation techniques and poor theoretical foundations in understanding and interpreting cognitive biases. Although bias-related research has generated many new insights in the software engineering community, specific bias mitigation techniques are still needed for software professionals to overcome the deleterious effects of cognitive biases on their work.",
+    "pdf_url": "https://arxiv.org/pdf/1707.03869v3",
+    "published": "2017-07-12"
+  },
+  "2406.04780v1": {
+    "title": "Software Engineering for Collective Cyber-Physical Ecosystems",
+    "authors": [
+      "Roberto Casadei",
+      "Gianluca Aguzzi",
+      "Giorgio Audrito",
+      "Ferruccio Damiani",
+      "Danilo Pianini",
+      "Giordano Scarso",
+      "Gianluca Torta",
+      "Mirko Viroli"
+    ],
+    "summary": "Today's distributed and pervasive computing addresses large-scale cyber-physical ecosystems, characterised by dense and large networks of devices capable of computation, communication and interaction with the environment and people. While most research focusses on treating these systems as \"composites\" (i.e., heterogeneous functional complexes), recent developments in fields such as self-organising systems and swarm robotics have opened up a complementary perspective: treating systems as \"collectives\" (i.e., uniform, collaborative, and self-organising groups of entities). This article explores the motivations, state of the art, and implications of this \"collective computing paradigm\" in software engineering, discusses its peculiar challenges, and outlines a path for future research, touching on aspects such as macroprogramming, collective intelligence, self-adaptive middleware, learning, synthesis, and experimentation of collective behaviour.",
+    "pdf_url": "https://arxiv.org/pdf/2406.04780v1",
+    "published": "2024-06-07"
+  }
+}

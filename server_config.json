@@ -1,0 +1,17 @@
+{
+    "mcpServers":{
+        "filesystem":{
+            "command": "npx",
+            "args":["-y","@modelcontextprotocol/server-filesystem","."]
+        },
+        "research":{
+            "url":"http://127.0.0.1:8001/mcp"
+        },
+ "fetch": {
+      "command": "C:\\Users\\SAGHAR\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\uvx.exe",
+      "args": [    "--with",
+    "mcp<2.0.0",
+    "mcp-server-fetch"]
+    }
+    }
+}

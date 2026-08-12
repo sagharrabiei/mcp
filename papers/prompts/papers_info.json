@@ -1,0 +1,123 @@
+{
+  "2404.15971v1": {
+    "title": "Boosting Architectural Generation via Prompts: Report",
+    "authors": [
+      "Xin Zhang",
+      "Wenwen Liu"
+    ],
+    "summary": "In the realm of AI architectural design, the importance of prompts is becoming increasingly prominent. With advancements in artificial intelligence and large-scale model technology, more design tasks are being delegated to machine learning algorithms. This necessitates a method for designers to guide algorithms in producing their desired designs. Prompts serve as a guiding and motivational mechanism, playing a crucial role in AI-generated architectural design. This paper categorizes and summarizes common vocabulary used in architectural design, discussing how to craft effective prompts and their impact on the quality and creativity of generated results. Through careful prompt design, designers can better control the generated architectural design images, thereby achieving designs that are more aligned with requirements and innovative.",
+    "pdf_url": "https://arxiv.org/pdf/2404.15971v1",
+    "published": "2024-04-24"
+  },
+  "2407.05181v1": {
+    "title": "Instructors as Innovators: A future-focused approach to new AI learning opportunities, with prompts",
+    "authors": [
+      "Ethan Mollick",
+      "Lilach Mollick"
+    ],
+    "summary": "This paper explores how instructors can leverage generative AI to create personalized learning experiences for students that transform teaching and learning. We present a range of AI-based exercises that enable novel forms of practice and application including simulations, mentoring, coaching, and co-creation. For each type of exercise, we provide prompts that instructors can customize, along with guidance on classroom implementation, assessment, and risks to consider. We also provide blueprints, prompts that help instructors create their own original prompts. Instructors can leverage their content and pedagogical expertise to design these experiences, putting them in the role of builders and innovators. We argue that this instructor-driven approach has the potential to democratize the development of educational technology by enabling individual instructors to create AI exercises and tools tailored to their students' needs. While the exercises in this paper are a starting point, not a definitive solutions, they demonstrate AI's potential to expand what is possible in teaching and learning.",
+    "pdf_url": "https://arxiv.org/pdf/2407.05181v1",
+    "published": "2024-04-23"
+  },
+  "2302.03668v2": {
+    "title": "Hard Prompts Made Easy: Gradient-Based Discrete Optimization for Prompt Tuning and Discovery",
+    "authors": [
+      "Yuxin Wen",
+      "Neel Jain",
+      "John Kirchenbauer",
+      "Micah Goldblum",
+      "Jonas Geiping",
+      "Tom Goldstein"
+    ],
+    "summary": "The strength of modern generative models lies in their ability to be controlled through text-based prompts. Typical \"hard\" prompts are made from interpretable words and tokens, and must be hand-crafted by humans. There are also \"soft\" prompts, which consist of continuous feature vectors. These can be discovered using powerful optimization methods, but they cannot be easily interpreted, re-used across models, or plugged into a text-based interface.\n  We describe an approach to robustly optimize hard text prompts through efficient gradient-based optimization. Our approach automatically generates hard text-based prompts for both text-to-image and text-to-text applications. In the text-to-image setting, the method creates hard prompts for diffusion models, allowing API users to easily generate, discover, and mix and match image concepts without prior knowledge on how to prompt the model. In the text-to-text setting, we show that hard prompts can be automatically discovered that are effective in tuning LMs for classification.",
+    "pdf_url": "https://arxiv.org/pdf/2302.03668v2",
+    "published": "2023-02-07"
+  },
+  "2407.00256v1": {
+    "title": "One Prompt is not Enough: Automated Construction of a Mixture-of-Expert Prompts",
+    "authors": [
+      "Ruochen Wang",
+      "Sohyun An",
+      "Minhao Cheng",
+      "Tianyi Zhou",
+      "Sung Ju Hwang",
+      "Cho-Jui Hsieh"
+    ],
+    "summary": "Large Language Models (LLMs) exhibit strong generalization capabilities to novel tasks when prompted with language instructions and in-context demos. Since this ability sensitively depends on the quality of prompts, various methods have been explored to automate the instruction design. While these methods demonstrated promising results, they also restricted the searched prompt to one instruction. Such simplification significantly limits their capacity, as a single demo-free instruction might not be able to cover the entire complex problem space of the targeted task. To alleviate this issue, we adopt the Mixture-of-Expert paradigm and divide the problem space into a set of sub-regions; Each sub-region is governed by a specialized expert, equipped with both an instruction and a set of demos. A two-phase process is developed to construct the specialized expert for each region: (1) demo assignment: Inspired by the theoretical connection between in-context learning and kernel regression, we group demos into experts based on their semantic similarity; (2) instruction assignment: A region-based joint search of an instruction per expert complements the demos assigned to it, yielding a synergistic effect. The resulting method, codenamed Mixture-of-Prompts (MoP), achieves an average win rate of 81% against prior arts across several major benchmarks.",
+    "pdf_url": "https://arxiv.org/pdf/2407.00256v1",
+    "published": "2024-06-28"
+  },
+  "2509.08182v1": {
+    "title": "XML Prompting as Grammar-Constrained Interaction: Fixed-Point Semantics, Convergence Guarantees, and Human-AI Protocols",
+    "authors": [
+      "Faruk Alpay",
+      "Taylan Alpay"
+    ],
+    "summary": "Structured prompting with XML tags has emerged as an effective way to steer large language models (LLMs) toward parseable, schema-adherent outputs in real-world systems. We develop a logic-first treatment of XML prompting that unifies (i) grammar-constrained decoding, (ii) fixed-point semantics over lattices of hierarchical prompts, and (iii) convergent human-AI interaction loops. We formalize a complete lattice of XML trees under a refinement order and prove that monotone prompt-to-prompt operators admit least fixed points (Knaster-Tarski) that characterize steady-state protocols; under a task-aware contraction metric on trees, we further prove Banach-style convergence of iterative guidance. We instantiate these results with context-free grammars (CFGs) for XML schemas and show how constrained decoding guarantees well-formedness while preserving task performance. A set of multi-layer human-AI interaction recipes demonstrates practical deployment patterns, including multi-pass \"plan $\\to$ verify $\\to$ revise\" routines and agentic tool use. We provide mathematically complete proofs and tie our framework to recent advances in grammar-aligned decoding, chain-of-verification, and programmatic prompting.",
+    "pdf_url": "https://arxiv.org/pdf/2509.08182v1",
+    "published": "2025-09-09"
+  },
+  "2401.09763v1": {
+    "title": "CLIP Model for Images to Textual Prompts Based on Top-k Neighbors",
+    "authors": [
+      "Xin Zhang",
+      "Xin Zhang",
+      "YeMing Cai",
+      "Tianzhi Jia"
+    ],
+    "summary": "Text-to-image synthesis, a subfield of multimodal generation, has gained significant attention in recent years. We propose a cost-effective approach for image-to-prompt generation that leverages generative models to generate textual prompts without the need for large amounts of annotated data. We divide our method into two stages: online stage and offline stage. We use a combination of the CLIP model and K-nearest neighbors (KNN) algorithm. The proposed system consists of two main parts: an offline task and an online task. Our method owns the highest metric 0.612 among these models, which is 0.013, 0.055, 0.011 higher than Clip, Clip + KNN(top 10) respectively.",
+    "pdf_url": "https://arxiv.org/pdf/2401.09763v1",
+    "published": "2024-01-18"
+  },
+  "2603.03317v1": {
+    "title": "Retcon -- a Prompt-Based Technique for Precise Control of LLMs in Conversations",
+    "authors": [
+      "David Kogan",
+      "Sam Nguyen",
+      "Masanori Suzuki",
+      "Feiyang Chen"
+    ],
+    "summary": "Recent advances in Large Language Models (LLMs) allow agents to execute complex natural language tasks. Many LLM applications, such as support agents, teaching assistants, and interactive bots, involve multi-turn conversations. However, it remains challenging to control LLMs in the context of such interactions, particularly when the LLM behavior needs to be adjustable over the course of the conversation. In this paper, we present Retcon, a few-shot prompting technique designed to provide turn-level control over LLMs in conversations. We then demonstrate that it performs significantly better than zero-shot and traditional few-shot prompting.",
+    "pdf_url": "https://arxiv.org/pdf/2603.03317v1",
+    "published": "2026-02-09"
+  },
+  "2401.10065v3": {
+    "title": "Code Prompting Elicits Conditional Reasoning Abilities in Text+Code LLMs",
+    "authors": [
+      "Haritz Puerto",
+      "Martin Tutek",
+      "Somak Aditya",
+      "Xiaodan Zhu",
+      "Iryna Gurevych"
+    ],
+    "summary": "Reasoning is a fundamental component of language understanding. Recent prompting techniques, such as chain of thought, have consistently improved LLMs' performance on various reasoning tasks. Nevertheless, there is still little understanding of what triggers reasoning abilities in LLMs in the inference stage. In this paper, we introduce code prompting, a chain of prompts that transforms a natural language problem into code and directly prompts the LLM using the generated code without resorting to external code execution. We hypothesize that code prompts can elicit certain reasoning capabilities of LLMs trained on text and code and utilize the proposed method to improve conditional reasoning, the ability to infer different conclusions depending on the fulfillment of certain conditions. We find that code prompting exhibits a high-performance boost for multiple LLMs (up to 22.52 percentage points on GPT 3.5, 7.75 on Mixtral, and 16.78 on Mistral) across multiple conditional reasoning datasets. We then conduct comprehensive experiments to understand how code prompts trigger reasoning abilities and which capabilities are elicited in the underlying models. Our analysis of GPT 3.5 reveals that the code formatting of the input problem is essential for performance improvement. Furthermore, code prompts improve sample efficiency of in-context learning and facilitate state tracking of variables or entities.",
+    "pdf_url": "https://arxiv.org/pdf/2401.10065v3",
+    "published": "2024-01-18"
+  },
+  "2604.21090v1": {
+    "title": "Structural Quality Gaps in Practitioner AI Governance Prompts: An Empirical Study Using a Five-Principle Evaluation Framework",
+    "authors": [
+      "Christo Zietsman"
+    ],
+    "summary": "AI governance programmes increasingly rely on natural language prompts to constrain and direct AI agent behaviour. These prompts function as executable specifications: they define the agent's mandate, scope, and quality criteria. Despite this role, no systematic framework exists for evaluating whether a governance prompt is structurally complete. We introduce a five-principle evaluation framework grounded in computability theory, proof theory, and Bayesian epistemology, and apply it to an empirical corpus of 34 publicly available AGENTS.md governance files sourced from GitHub. Our evaluation reveals that 37% of evaluated file-model pairs score below the structural completeness threshold, with data classification and assessment rubric criteria most frequently absent. These results suggest that practitioner-authored governance prompts exhibit consistent structural patterns that automated static analysis could detect and remediate. We discuss implications for requirements engineering practice in AI-assisted development contexts, identify a previously undocumented artefact classification gap in the AGENTS.md convention, and propose directions for tool support.",
+    "pdf_url": "https://arxiv.org/pdf/2604.21090v1",
+    "published": "2026-04-22"
+  },
+  "2112.10833v1": {
+    "title": "Understanding User Perspectives on Prompts for Brief Reflection on Troubling Emotions",
+    "authors": [
+      "Ananya Bhattacharjee",
+      "Pan Chen",
+      "Linjia Zhou",
+      "Abhijoy Mandal",
+      "Jai Aggarwal",
+      "Katie O'Leary",
+      "Anne Hsu",
+      "Alex Mariakakis",
+      "Joseph Jay Williams"
+    ],
+    "summary": "We investigate users' perspectives on an online reflective question activity (RQA) that prompts people to externalize their underlying emotions on a troubling situation. Inspired by principles of cognitive behavioral therapy, our 15-minute activity encourages self-reflection without a human or automated conversational partner. A deployment of our RQA on Amazon Mechanical Turk suggests that people perceive several benefits from our RQA, including structured awareness of their thoughts and problem-solving around managing their emotions. Quantitative evidence from a randomized experiment suggests people find that our RQA makes them feel less worried by their selected situation and worth the minimal time investment. A further two-week technology probe deployment with 11 participants indicates that people see benefits to doing this activity repeatedly, although the activity may get monotonous over time. In summary, this work demonstrates the promise of online reflection activities that carefully leverage principles of psychology in their design.",
+    "pdf_url": "https://arxiv.org/pdf/2112.10833v1",
+    "published": "2021-12-20"
+  }
+}

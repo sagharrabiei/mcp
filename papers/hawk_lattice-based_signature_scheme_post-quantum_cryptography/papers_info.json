@@ -1,0 +1,49 @@
+{
+  "1109.3235v1": {
+    "title": "A new spin on quantum cryptography: Avoiding trapdoors and embracing public keys",
+    "authors": [
+      "Lawrence M. Ioannou",
+      "Michele Mosca"
+    ],
+    "summary": "We give new arguments in support of \\emph{signed quantum key establishment}, where quantum cryptography is used in a public-key infrastructure that provides the required authentication. We also analyze more thoroughly than previous works the benefits that quantum key establishment protocols have over certain classical protocols, motivated in part by the various objections to quantum key establishment that are sometimes raised. Previous knowledge of quantum cryptography on the reader's part is not required for this article, as the definition of \"quantum key establishment\" that we use is an entirely classical and black-box characterization (one need only trust that protocols satisfying the definition exist).",
+    "pdf_url": "https://arxiv.org/pdf/1109.3235v1",
+    "published": "2011-09-15"
+  },
+  "2402.00922v1": {
+    "title": "Towards post-quantum blockchain: A review on blockchain cryptography resistant to quantum computing attacks",
+    "authors": [
+      "Tiago M. Fernandez-Carames",
+      "Paula Fraga-Lamas"
+    ],
+    "summary": "Blockchain and other Distributed Ledger Technologies (DLTs) have evolved significantly in the last years and their use has been suggested for numerous applications due to their ability to provide transparency, redundancy and accountability. In the case of blockchain, such characteristics are provided through public-key cryptography and hash functions. However, the fast progress of quantum computing has opened the possibility of performing attacks based on Grover's and Shor's algorithms in the near future. Such algorithms threaten both public-key cryptography and hash functions, forcing to redesign blockchains to make use of cryptosystems that withstand quantum attacks, thus creating which are known as post-quantum, quantum-proof, quantum-safe or quantum-resistant cryptosystems. For such a purpose, this article first studies current state of the art on post-quantum cryptosystems and how they can be applied to blockchains and DLTs. Moreover, the most relevant post-quantum blockchain systems are studied, as well as their main challenges. Furthermore, extensive comparisons are provided on the characteristics and performance of the most promising post-quantum public-key encryption and digital signature schemes for blockchains. Thus, this article seeks to provide a broad view and useful guidelines on post-quantum blockchain security to future blockchain researchers and developers.",
+    "pdf_url": "https://arxiv.org/pdf/2402.00922v1",
+    "published": "2024-02-01"
+  },
+  "2003.09019v3": {
+    "title": "Intuitive Understanding of Quantum Computation and Post-Quantum Cryptography",
+    "authors": [
+      "Quan Thoi Minh Nguyen"
+    ],
+    "summary": "Post-quantum cryptography is inevitable. National Institute of Standards and Technology (NIST) starts standardizing quantum-resistant public-key cryptography (aka post-quantum cryptography). The reason is that investment in quantum computing is blooming which poses significant threats to our currently deployed cryptographic algorithms. As a security engineer, to prepare for the apocalypse in advance, I've been watching the development of quantum computers and post-quantum cryptography closely. Never mind, I simply made up an excuse to study these fascinating scientific fields. However, they are extremely hard to understand, at least to an amateur like me. This article shares with you my notes with the hope that you will have an intuitive understanding of the beautiful and mind-blowing quantum algorithms and post-quantum cryptography. Update: Multivariate signature scheme Rainbow is broken by Ward Beullens. Supersingular Isogeny Diffie-Hellman protocol (SIDH) is broken by Wouter Castryck and Thomas Decru",
+    "pdf_url": "https://arxiv.org/pdf/2003.09019v3",
+    "published": "2020-03-18"
+  },
+  "1912.00916v4": {
+    "title": "Mobile Energy Requirements of the Upcoming NIST Post-Quantum Cryptography Standards",
+    "authors": [
+      "Markku-Juhani O. Saarinen"
+    ],
+    "summary": "Standardization of Post-Quantum Cryptography (PQC) was started by NIST in 2016 and has proceeded to its second elimination round. The upcoming standards are intended to replace (or supplement) current RSA and Elliptic Curve Cryptography (ECC) on all targets, including lightweight, embedded, and mobile systems. We present an energy requirement analysis based on extensive measurements of PQC candidate algorithms on a Cortex M4 - based reference platform. We relate computational (energy) costs of PQC algorithms to their data transmission costs which are expected to increase with new types of public keys and ciphertext messages. The energy, bandwidth, and latency needs of PQC algorithms span several orders of magnitude, which is substantial enough to impact battery life, user experience, and application protocol design. We propose metrics and guidelines for PQC algorithm usage in IoT and mobile systems based on our findings. Our evidence supports the view that fast structured-lattice PQC schemes are the preferred choice for cloud-connected mobile devices in most use cases, even when per-bit data transmission energy cost is relatively high.",
+    "pdf_url": "https://arxiv.org/pdf/1912.00916v4",
+    "published": "2019-12-02"
+  },
+  "2501.03249v1": {
+    "title": "Homomorphic Encryption Based on Lattice Post-Quantum Cryptography",
+    "authors": [
+      "Abel C. H. Chen"
+    ],
+    "summary": "As quantum computing technology continues to advance, post-quantum cryptographic methods capable of resisting quantum attacks have emerged as a critical area of focus. Given the potential vulnerability of existing homomorphic encryption methods, such as RSA, ElGamal, and Paillier, to quantum computing attacks, this study proposes a lattice-based post-quantum homomorphic encryption scheme. The approach leverages lattice cryptography to build resilience against quantum threats while enabling practical homomorphic encryption applications. This research provides mathematical proofs and computational examples, alongside a security analysis of the lattice-based post-quantum homomorphic encryption scheme. The findings are intended to serve as a reference for developers of homomorphic encryption applications, such as federated learning systems.",
+    "pdf_url": "https://arxiv.org/pdf/2501.03249v1",
+    "published": "2024-12-23"
+  }
+}

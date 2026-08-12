@@ -1,0 +1,6 @@
+.env
+main.py
+mcpClient.py
+__pycache__/
+.venv/
+*.png

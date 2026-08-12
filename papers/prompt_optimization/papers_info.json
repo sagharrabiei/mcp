@@ -1,0 +1,113 @@
+{
+  "1808.06100v6": {
+    "title": "On the solution existence and stability of polynomial optimization problems",
+    "authors": [
+      "Vu Trung Hieu"
+    ],
+    "summary": "This paper introduces and investigates a regularity condition in the asymptotic sense for optimization problems whose objective functions are polynomial. Under this regularity condition, the normalization argument in asymptotic analysis enables us to see the solution existence as well as the solution stability of these problems. We prove a Frank-Wolfe type theorem for regular optimization problems and an Eaves type theorem for non-regular pseudoconvex optimization problems. Moreover, we show results on the stability such as upper semicontinuity and local upper-H\u00f6lder stability of the solution map of polynomial optimization problems. At the end of the paper, we discuss the genericity of the regularity condition.",
+    "pdf_url": "https://arxiv.org/pdf/1808.06100v6",
+    "published": "2018-08-18"
+  },
+  "2501.00258v1": {
+    "title": "Optimal design of frame structures with mixed categorical and continuous design variables using the Gumbel-Softmax method",
+    "authors": [
+      "Mehran Ebrahimi",
+      "Hyunmin Cheong",
+      "Pradeep Kumar Jayaraman",
+      "Farhad Javid"
+    ],
+    "summary": "In optimizing real-world structures, due to fabrication or budgetary restraints, the design variables may be restricted to a set of standard engineering choices. Such variables, commonly called categorical variables, are discrete and unordered in essence, precluding the utilization of gradient-based optimizers for the problems containing them. In this paper, incorporating the Gumbel-Softmax (GSM) method, we propose a new gradient-based optimizer for handling such variables in the optimal design of large-scale frame structures. The GSM method provides a means to draw differentiable samples from categorical distributions, thereby enabling sensitivity analysis for the variables generated from such distributions. The sensitivity information can greatly reduce the computational cost of traversing high-dimensional and discrete design spaces in comparison to employing gradient-free optimization methods. In addition, since the developed optimizer is gradient-based, it can naturally handle the simultaneous optimization of categorical and continuous design variables. Through three numerical case studies, different aspects of the proposed optimizer are studied and its advantages over population-based optimizers, specifically a genetic algorithm, are demonstrated.",
+    "pdf_url": "https://arxiv.org/pdf/2501.00258v1",
+    "published": "2024-12-31"
+  },
+  "2303.08710v1": {
+    "title": "Two-Scale Optimization of Graded Lattice Structures respecting Buckling on Micro- and Macroscale",
+    "authors": [
+      "Daniel H\u00fcbner",
+      "Fabian Wein",
+      "Michael Stingl"
+    ],
+    "summary": "Interest in components with detailed structures increased with the progress in advanced manufacturing techniques in recent years. Parts with graded lattice elements can provide interesting mechanical, thermal, and acoustic properties compared to parts where only coarse features are included. One of these improvements is better global buckling resistance of the component. However, thin features are prone to local buckling. Normally, analyses with high computational effort are conducted on high-resolution finite element meshes to optimize parts with good global and local stability. Until recently, works focused only on either global or local buckling behavior. We use two-scale optimization based on asymptotic homogenization of elastic properties and local buckling behavior to reduce the effort of full-scale analyses. For this, we present an approach for concurrent local and global buckling optimization of parameterized graded lattice structures. It is based on a worst-case model for the homogenized buckling load factor, which acts as a safeguard against pure local buckling. Cross-modes residing on both scales are not detected. We support our theory with numerical examples and validations on dehomogenized designs, which show the capabilities of our method, and discuss the advantages and limitations of the worst-case model.",
+    "pdf_url": "https://arxiv.org/pdf/2303.08710v1",
+    "published": "2023-03-15"
+  },
+  "2507.22923v1": {
+    "title": "How and Where to Translate? The Impact of Translation Strategies in Cross-lingual LLM Prompting",
+    "authors": [
+      "Aman Gupta",
+      "Yingying Zhuang",
+      "Zhou Yu",
+      "Ziji Zhang",
+      "Anurag Beniwal"
+    ],
+    "summary": "Despite advances in the multilingual capabilities of Large Language Models (LLMs), their performance varies substantially across different languages and tasks. In multilingual retrieval-augmented generation (RAG)-based systems, knowledge bases (KB) are often shared from high-resource languages (such as English) to low-resource ones, resulting in retrieved information from the KB being in a different language than the rest of the context. In such scenarios, two common practices are pre-translation to create a mono-lingual prompt and cross-lingual prompting for direct inference. However, the impact of these choices remains unclear. In this paper, we systematically evaluate the impact of different prompt translation strategies for classification tasks with RAG-enhanced LLMs in multilingual systems. Experimental results show that an optimized prompting strategy can significantly improve knowledge sharing across languages, therefore improve the performance on the downstream classification task. The findings advocate for a broader utilization of multilingual resource sharing and cross-lingual prompt optimization for non-English languages, especially the low-resource ones.",
+    "pdf_url": "https://arxiv.org/pdf/2507.22923v1",
+    "published": "2025-07-21"
+  },
+  "2201.02491v3": {
+    "title": "An efficient and easy-to-extend Matlab code of the Moving Morphable Component (MMC) method for three-dimensional topology optimization",
+    "authors": [
+      "Zongliang Du",
+      "Tianchen Cui",
+      "Chang Liu",
+      "Weisheng Zhang",
+      "Yilin Guo",
+      "Xu Guo"
+    ],
+    "summary": "Explicit topology optimization methods have received ever-increasing interest in recent years. In particular, a 188-line Matlab code of the two-dimensional (2D) Moving Morphable Component (MMC)-based topology optimization method was released by Zhang et al. (Struct Multidiscip Optim 53(6):1243-1260, 2016). The present work aims to propose an efficient and easy-to-extend 256-line Matlab code of the MMC method for three-dimensional (3D) topology optimization implementing some new numerical techniques. To be specific, by virtue of the function aggregation technique, accurate sensitivity analysis, which is also easy-to-extend to other problems, is achieved. Besides, based on an efficient identification algorithm for load transmission path, the degrees of freedoms (DOFs) not belonging to the load transmission path are removed in finite element analysis (FEA), which significantly accelerates the optimization process. As a result, compared to the corresponding 188-line 2D code, the performance of the optimization results, the computational efficiency of FEA, and the convergence rate and the robustness of optimization process are greatly improved. For the sake of completeness, a refined 218-line Matlab code implementing the 2D-MMC method is also provided.",
+    "pdf_url": "https://arxiv.org/pdf/2201.02491v3",
+    "published": "2022-01-07"
+  },
+  "1810.05633v2": {
+    "title": "Stochastic (Approximate) Proximal Point Methods: Convergence, Optimality, and Adaptivity",
+    "authors": [
+      "Hilal Asi",
+      "John C. Duchi"
+    ],
+    "summary": "We develop model-based methods for solving stochastic convex optimization problems, introducing the approximate-proximal point, or aProx, family, which includes stochastic subgradient, proximal point, and bundle methods. When the modeling approaches we propose are appropriately accurate, the methods enjoy stronger convergence and robustness guarantees than classical approaches, even though the model-based methods typically add little to no computational overhead over stochastic subgradient methods. For example, we show that improved models converge with probability 1 and enjoy optimal asymptotic normality results under weak assumptions; these methods are also adaptive to a natural class of what we term easy optimization problems, achieving linear convergence under appropriate strong growth conditions on the objective. Our substantial experimental investigation shows the advantages of more accurate modeling over standard subgradient methods across many smooth and non-smooth optimization problems.",
+    "pdf_url": "https://arxiv.org/pdf/1810.05633v2",
+    "published": "2018-10-12"
+  },
+  "2105.13646v3": {
+    "title": "Conic-Optimization Based Algorithms for Nonnegative Matrix Factorization",
+    "authors": [
+      "Valentin Leplat",
+      "Yurii Nesterov",
+      "Nicolas Gillis",
+      "Fran\u00e7ois Glineur"
+    ],
+    "summary": "Nonnegative matrix factorization is the following problem: given a nonnegative input matrix $V$ and a factorization rank $K$, compute two nonnegative matrices, $W$ with $K$ columns and $H$ with $K$ rows, such that $WH$ approximates $V$ as well as possible. In this paper, we propose two new approaches for computing high-quality NMF solutions using conic optimization. These approaches rely on the same two steps. First, we reformulate NMF as minimizing a concave function over a product of convex cones--one approach is based on the exponential cone, and the other on the second-order cone. Then, we solve these reformulations iteratively: at each step, we minimize exactly, over the feasible set, a majorization of the objective functions obtained via linearization at the current iterate. Hence these subproblems are convex conic programs and can be solved efficiently using dedicated algorithms. We prove that our approaches reach a stationary point with an accuracy decreasing as $\\mathcal{O}(\\frac{1}{i})$, where $i$ denotes the iteration number. To the best of our knowledge, our analysis is the first to provide a convergence rate to stationary points for NMF. Furthermore, in the particular cases of rank-one factorizations (that is, $K=1$), we show that one of our formulations can be expressed as a convex optimization problem implying that optimal rank-one approximations can be computed efficiently. Finally, we show on several numerical examples that our approaches are able to frequently compute exact NMFs (that is, with $V = WH$), and compete favorably with the state of the art.",
+    "pdf_url": "https://arxiv.org/pdf/2105.13646v3",
+    "published": "2021-05-28"
+  },
+  "2111.15645v5": {
+    "title": "Survey Descent: A Multipoint Generalization of Gradient Descent for Nonsmooth Optimization",
+    "authors": [
+      "X. Y. Han",
+      "Adrian S. Lewis"
+    ],
+    "summary": "For strongly convex objectives that are smooth, the classical theory of gradient descent ensures linear convergence relative to the number of gradient evaluations. An analogous nonsmooth theory is challenging. Even when the objective is smooth at every iterate, the corresponding local models are unstable and the number of cutting planes invoked by traditional remedies is difficult to bound, leading to convergences guarantees that are sublinear relative to the cumulative number of gradient evaluations. We instead propose a multipoint generalization of the gradient descent iteration for local optimization. While designed with general objectives in mind, we are motivated by a ``max-of-smooth'' model that captures the subdifferential dimension at optimality. We prove linear convergence when the objective is itself max-of-smooth, and experiments suggest a more general phenomenon.",
+    "pdf_url": "https://arxiv.org/pdf/2111.15645v5",
+    "published": "2021-11-30"
+  },
+  "2005.11788v1": {
+    "title": "Convergence Results for Optimal Control Problems Governed by Elliptic Quasivariational Inequalities",
+    "authors": [
+      "Mircea Sofonea",
+      "Domingo A. Tarzia"
+    ],
+    "summary": "We consider an optimal control problem $\\cQ$ governed by an elliptic quasivariational inequality with unilateral constraints. The existence of optimal pairs of the problem is a well known result, see \\cite{SS}, for instance. We associate to $\\cQ$ a new optimal control problem $\\wQ$, obtained by perturbing the state inequality (including the set of constraints and the nonlinear operator) and the cost functional, as well. Then, we provide sufficient conditions which guarantee the convergence of solutions of Problem $\\wQ$ to a solution of Problem $\\cQ$. The proofs are based on convergence results for elliptic quasivariational inequalities, obtained by using arguments of compactness, lower semicontinuity, monotonicity, penalty and various estimates. Finally, we illustrate the use of the abstract convergence results in the study of optimal control associated with two boundary value problems. The first one describes the equilibrium of an elastic body in frictional contact with an obstacle, the so-called foundation. The process is static and the contact is modeled with normal compliance and unilateral constraint, associated to a version of Coulomb's law of dry friction. The second one describes a stationary heat transfer problem with unilateral constraints. For the two problems we prove existence, uniqueness and convergence results together with the corresponding physical interpretation.",
+    "pdf_url": "https://arxiv.org/pdf/2005.11788v1",
+    "published": "2020-05-24"
+  },
+  "1607.01655v3": {
+    "title": "L1 penalization of volumetric dose objectives in optimal control of PDEs",
+    "authors": [
+      "Richard C. Barnard",
+      "Christian Clason"
+    ],
+    "summary": "This work is concerned with a class of optimal control problems governed by a partial differential equation that are motivated by an application in radiotherapy treatment planning, where the primary design objective is to minimize the volume where a functional of the state violates a prescribed level, but prescribing these levels in the form of pointwise state constraints can lead to infeasible problems. We therefore propose an alternative approach based on $L^1$ penalization of the violation. We establish well-posedness of the corresponding optimal control problem, derive first-order optimality conditions, and present a semismooth Newton method for the efficient numerical solution of these problems. The performance of this method for a model problem is illustrated and contrasted with the alternative approach based on (regularized) state constraints.",
+    "pdf_url": "https://arxiv.org/pdf/1607.01655v3",
+    "published": "2016-07-06"
+  }
+}

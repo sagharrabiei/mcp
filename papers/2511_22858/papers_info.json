@@ -1,0 +1,15 @@
+{
+  "2511.22858v1": {
+    "title": "RAG System for Supporting Japanese Litigation Procedures: Faithful Response Generation Complying with Legal Norms",
+    "authors": [
+      "Yuya Ishihara",
+      "Atsushi Keyaki",
+      "Hiroaki Yamada",
+      "Ryutaro Ohara",
+      "Mihoko Sumida"
+    ],
+    "summary": "This study discusses the essential components that a Retrieval-Augmented Generation (RAG)-based LLM system should possess in order to support Japanese medical litigation procedures complying with legal norms. In litigation, expert commissioners, such as physicians, architects, accountants, and engineers, provide specialized knowledge to help judges clarify points of dispute. When considering the substitution of these expert roles with a RAG-based LLM system, the constraint of strict adherence to legal norms is imposed. Specifically, three requirements arise: (1) the retrieval module must retrieve appropriate external knowledge relevant to the disputed issues in accordance with the principle prohibiting the use of private knowledge, (2) the responses generated must originate from the context provided by the RAG and remain faithful to that context, and (3) the retrieval module must reference external knowledge with appropriate timestamps corresponding to the issues at hand. This paper discusses the design of a RAG-based LLM system that satisfies these requirements.",
+    "pdf_url": "https://arxiv.org/pdf/2511.22858v1",
+    "published": "2025-11-28"
+  }
+}

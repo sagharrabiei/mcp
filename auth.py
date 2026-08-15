@@ -7,16 +7,35 @@ import os
 
 load_dotenv()
 SECRET_KEY = os.getenv("SECRET_KEY")
-CLIENT_ID = os.getenv("CLIENT_ID")
+BASE_URL = os.getenv("BASE_URL") 
 
 auth_codes = {}
+registered_clients = {}    
+
+async def register(request):               # <-- new
+    body = await request.json()
+    client_id = secrets.token_urlsafe(16)
+    registered_clients[client_id] = {
+        "redirect_uris": body["redirect_uris"],
+    }
+    return JSONResponse({
+        "client_id": client_id,
+        "redirect_uris": body["redirect_uris"],
+        "token_endpoint_auth_method": "none",
+    }, status_code=201)
 
 async def authorize(request):
     params = request.query_params
     
-    if params.get("client_id") != CLIENT_ID:
+    client = registered_clients.get(params.get("client_id"))   # <-- changed
+
+    if client is None:                                          # <-- changed
         return JSONResponse({"error": "invalid_client"}, status_code=400)
 
+    redirect_uri = params["redirect_uri"]
+    if redirect_uri not in client["redirect_uris"]:             # <-- new
+        return JSONResponse({"error": "invalid_redirect_uri"}, status_code=400)
+    
     state = params.get("state")  # <-- new
 
     code = secrets.token_urlsafe(32)
@@ -46,7 +65,20 @@ async def token(request):
     )
     return JSONResponse({"access_token": access_token, "token_type": "Bearer"})
 
+async def metadata(request):                # <-- new
+    return JSONResponse({
+        "issuer": BASE_URL,
+        "authorization_endpoint": f"{BASE_URL}/authorize",
+        "token_endpoint": f"{BASE_URL}/token",
+        "registration_endpoint": f"{BASE_URL}/register",
+        "code_challenge_methods_supported": ["S256"],
+        "response_types_supported": ["code"],
+        "grant_types_supported": ["authorization_code"],
+    })
+
 auth_routes = [
+    Route("/.well-known/oauth-authorization-server", metadata),   # <-- new
+    Route("/register", register, methods=["POST"]),     
     Route("/authorize", authorize),
     Route("/token", token, methods=["POST"]),
 ]

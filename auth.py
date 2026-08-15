@@ -13,14 +13,23 @@ auth_codes = {}
 
 async def authorize(request):
     params = request.query_params
+    
     if params.get("client_id") != CLIENT_ID:
         return JSONResponse({"error": "invalid_client"}, status_code=400)
+
+    state = params.get("state")  # <-- new
+
     code = secrets.token_urlsafe(32)
     auth_codes[code] = {
         "code_challenge": params["code_challenge"],
         "expires_at": time.time() + 300,
     }
-    return RedirectResponse(f"{params['redirect_uri']}?code={code}")
+
+    redirect_url = f"{params['redirect_uri']}?code={code}"
+    if state is not None:
+        redirect_url += f"&state={state}"
+
+    return RedirectResponse(redirect_url)
 
 async def token(request):
     form = await request.form()

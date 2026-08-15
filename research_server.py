@@ -11,7 +11,7 @@ from pydantic import AnyHttpUrl
 import jwt
 from mcp.server.fastmcp import FastMCP
 from mcp.server.auth.provider import TokenVerifier, AccessToken
-from auth import SECRET_KEY, auth_routes
+from auth import BASE_URL, SECRET_KEY, auth_routes
 
 class JWTVerifier(TokenVerifier):
     async def verify_token(self, token: str) -> AccessToken | None:
@@ -27,8 +27,8 @@ mcp = FastMCP(
     host="0.0.0.0",
     token_verifier=JWTVerifier(),
         auth=AuthSettings(
-        issuer_url=AnyHttpUrl("https://mcp-with-oauth2-1.onrender.com"),
-        resource_server_url=AnyHttpUrl("https://mcp-with-oauth2-1.onrender.com"),
+        issuer_url=AnyHttpUrl(BASE_URL),
+        resource_server_url=AnyHttpUrl(f"{BASE_URL}/mcp"),
     ),
 
 )

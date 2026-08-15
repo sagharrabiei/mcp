@@ -5,6 +5,8 @@ import re
 from dotenv import load_dotenv
 from openai import OpenAI
 from mcp.server.fastmcp import FastMCP
+from mcp.server.auth.settings import AuthSettings
+from pydantic import AnyHttpUrl
 
 import jwt
 from mcp.server.fastmcp import FastMCP
@@ -24,6 +26,11 @@ mcp = FastMCP(
     port=int(os.environ.get("PORT", 8001)),
     host="0.0.0.0",
     token_verifier=JWTVerifier(),
+        auth=AuthSettings(
+        issuer_url=AnyHttpUrl("https://mcp-with-oauth2-1.onrender.com"),
+        resource_server_url=AnyHttpUrl("https://mcp-with-oauth2-1.onrender.com"),
+    ),
+
 )
 
 

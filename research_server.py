@@ -6,7 +6,25 @@ from dotenv import load_dotenv
 from openai import OpenAI
 from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP("research", port=int(os.environ.get("PORT", 8001)), host="0.0.0.0")
+import jwt
+from mcp.server.fastmcp import FastMCP
+from mcp.server.auth.provider import TokenVerifier, AccessToken
+from auth import SECRET_KEY, auth_routes
+
+class JWTVerifier(TokenVerifier):
+    async def verify_token(self, token: str) -> AccessToken | None:
+        try:
+            payload = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
+        except jwt.InvalidTokenError:
+            return None
+        return AccessToken(token=token, client_id=payload["sub"], scopes=[])
+
+mcp = FastMCP(
+    "research",
+    port=int(os.environ.get("PORT", 8001)),
+    host="0.0.0.0",
+    token_verifier=JWTVerifier(),
+)
 
 
 PAPER_DIR = os.path.join(os.getcwd(), "papers")
@@ -188,9 +206,14 @@ def generate_search_prompt(topic:str, num_papers: int=5)->str:
 
 
 
+from starlette.applications import Starlette
+from starlette.routing import Mount
+import uvicorn
 
-
-
+app = Starlette(routes=[
+    *auth_routes,
+    Mount("/", app=mcp.streamable_http_app()),
+])
 
 if __name__ == "__main__":
-    mcp.run(transport='streamable-http')
+    uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 8001)))

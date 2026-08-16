@@ -10,7 +10,37 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 BASE_URL = os.getenv("BASE_URL") 
 
 auth_codes = {}
-registered_clients = {}    
+registered_clients = {}
+
+ACCESS_TOKEN_TTL = 3600              # 1 hour
+REFRESH_TOKEN_TTL = 30 * 24 * 3600   # 30 days
+
+
+def _issue_access_token(sub: str) -> str:
+    """Self-contained access token (JWT) verified statelessly by the MCP server."""
+    return jwt.encode(
+        {"sub": sub, "token_type": "access", "exp": time.time() + ACCESS_TOKEN_TTL},
+        SECRET_KEY,
+        algorithm="HS256",
+    )
+
+
+def _issue_refresh_token(sub: str) -> str:
+    """Long-lived, rotation-capable refresh token. Stateless so it verifies on any instance."""
+    return jwt.encode(
+        {"sub": sub, "token_type": "refresh", "exp": time.time() + REFRESH_TOKEN_TTL},
+        SECRET_KEY,
+        algorithm="HS256",
+    )
+
+
+def _token_response(sub: str) -> dict:
+    return {
+        "access_token": _issue_access_token(sub),
+        "refresh_token": _issue_refresh_token(sub),
+        "token_type": "Bearer",
+        "expires_in": ACCESS_TOKEN_TTL,
+    }    
 
 async def register(request):               # <-- new
     body = await request.json()
@@ -52,6 +82,26 @@ async def authorize(request):
 
 async def token(request):
     form = await request.form()
+    grant_type = form.get("grant_type", "authorization_code")
+
+    # grant_type=refresh_token: swap an unexpired refresh token for a fresh pair
+    if grant_type == "refresh_token":
+        refresh_token = form.get("refresh_token")
+        if not refresh_token:
+            return JSONResponse({"error": "invalid_grant"}, status_code=400)
+        try:
+            payload = jwt.decode(refresh_token, SECRET_KEY, algorithms=["HS256"])
+        except jwt.InvalidTokenError:
+            return JSONResponse({"error": "invalid_grant"}, status_code=400)
+        if payload.get("token_type") != "refresh":
+            return JSONResponse({"error": "invalid_grant"}, status_code=400)
+        sub = payload.get("sub")
+        if not sub:
+            return JSONResponse({"error": "invalid_grant"}, status_code=400)
+        # Rotate: return a brand-new pair so a leaked token can't be replayed.
+        return JSONResponse(_token_response(sub))
+
+    # default: authorization_code + PKCE
     entry = auth_codes.pop(form.get("code"), None)
     if entry is None or entry["expires_at"] < time.time():
         return JSONResponse({"error": "invalid_grant"}, status_code=400)
@@ -60,10 +110,7 @@ async def token(request):
     ).decode().rstrip("=")
     if check != entry["code_challenge"]:
         return JSONResponse({"error": "invalid_grant"}, status_code=400)
-    access_token = jwt.encode(
-        {"sub": "user", "exp": time.time() + 3600}, SECRET_KEY, algorithm="HS256"
-    )
-    return JSONResponse({"access_token": access_token, "token_type": "Bearer"})
+    return JSONResponse(_token_response("user"))
 
 async def metadata(request):                # <-- new
     return JSONResponse({
@@ -73,7 +120,8 @@ async def metadata(request):                # <-- new
         "registration_endpoint": f"{BASE_URL}/register",
         "code_challenge_methods_supported": ["S256"],
         "response_types_supported": ["code"],
-        "grant_types_supported": ["authorization_code"],
+        "grant_types_supported": ["authorization_code", "refresh_token"],
+        "token_endpoint_auth_methods_supported": ["none"],
     })
 
 auth_routes = [

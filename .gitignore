@@ -1,6 +1,7 @@
 .env
 main.py
 mcpClient.py
+.mcp_token_store.json
 __pycache__/
 .venv/
 *.png

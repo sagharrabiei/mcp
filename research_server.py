@@ -216,11 +216,30 @@ def generate_search_prompt(topic:str, num_papers: int=5)->str:
 from starlette.applications import Starlette
 from starlette.routing import Mount
 import uvicorn
+from contextlib import asynccontextmanager
 
-app = Starlette(routes=[
-    *auth_routes,
-    Mount("/", app=mcp.streamable_http_app()),
-])
+# FastMCP's streamable-http app carries the lifespan that starts the session
+# manager task group (streamable_http_app -> Starlette(lifespan=session_manager.run)).
+# Running it bare inside a custom Starlette app (for the extra OAuth routes) drops
+# that lifespan, so the first authenticated `initialize` crashes with
+# "Task group is not initialized. Make sure to use run()." We hoist the inner
+# app's lifespan onto the outer app so the session manager actually starts.
+_mcp_stream_app = mcp.streamable_http_app()
+
+
+@asynccontextmanager
+async def _lifespan(app):
+    async with _mcp_stream_app.router.lifespan_context(_mcp_stream_app):
+        yield
+
+
+app = Starlette(
+    routes=[
+        *auth_routes,
+        Mount("/", app=_mcp_stream_app),
+    ],
+    lifespan=_lifespan,
+)
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 8001)))

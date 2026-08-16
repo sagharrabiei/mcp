@@ -5,7 +5,7 @@
             "args":["-y","@modelcontextprotocol/server-filesystem","."]
         },
         "research":{
-            "url":"https://mcp-with-oauth2-1-dem3.onrender.com"
+            "url":"https://mcp-5-iru5.onrender.com/mcp"
         },
  "fetch": {
       "command": "C:\\Users\\SAGHAR\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\uvx.exe",
